@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Loan & Lease</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+    <div class="header_main">
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/abc.webp" alt="Logo" class="logo-image"></a>                            
+            </div>
+            <h1 style=" margin-top: 50px; color: #072833 ; text-align: center; font-size: xxx-large;" ><b> Credit Education Hub</h1>
+        </div>
+    </div>
+<div class="header">
+    <div class="container">
+        <!-- Header inner -->
+        <div class="col-sm-12">
+            <div class="menu-area">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="credit-score-simulator.html">Credit Score Simulator</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loan-calculator.html">Loan Calculator</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT</a>
+                            </li>
+                            <li class="last"><a href="#"><img src="images/search-icon.png" alt="icon"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div><br>
+<main class="container mt-5">
+   
+    <form id="credit-score-form"  style="margin-top: -25px">
+        <br> <div class="custom-header">
+            Credit Score Simulator <br>
+        </div><br>
+
+        <div class="form-row marg">
+            <div class="form-group col-md-6">
+                <label for="totalCreditUtilization">Credit Utilization (%):</label>
+                <input type="number" id="totalCreditUtilization" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="numberOfAccounts">Credit Accounts:</label>
+                <input type="number" id="numberOfAccounts" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="bankruptcyStatus">Bankruptcy Status:</label>
+                <select id="bankruptcyStatus" class="form-control">
+                    <option value="none">None</option>
+                    <option value="discharged">Discharged</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="repoStatus">Repossession Status:</label>
+                <select id="repoStatus" class="form-control">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="annualIncome">Annual Income ($):</label>
+                <input type="number" id="annualIncome" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="hasMortgage">Mortgage:</label>
+                <select id="hasMortgage" class="form-control">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="missedPayments">Missed Payments (6 Months):</label>
+                <input type="number" id="missedPayments" class="form-control" min="0" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="positiveAccounts">Positive Accounts:</label>
+                <input type="number" id="positiveAccounts" class="form-control" min="0" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="autoLoanHistory">Auto Loan History:</label>
+                <input type="number" id="autoLoanHistory" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="autoLoanUtilization">Auto Loan Utilization (%):</label>
+                <input type="number" id="autoLoanUtilization" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="autoCreditInquiries">Auto Credit Inquiries:</label>
+                <input type="number" id="autoCreditInquiries" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="autoLoanDiversity">Auto Loan Diversity:</label>
+                <select id="autoLoanDiversity" class="form-control">
+                    <option value="both">Both Lease and Loan</option>
+                    <option value="lease">Lease Only</option>
+                    <option value="loan">Loan Only</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="recentCreditBehavior">Recent Credit Score:</label>
+                <input type="number" id="recentCreditBehavior" class="form-control" required>
+            </div>
+        </div>
+        <button type="button" id="calculateScore" class="btn btn-primary">Calculate</button><br>
+    </form>
+    <div class="result text-center" id="result">
+        <br>
+    </div>
+
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" onclick="toggleChat()">Chat with Expert</button>
+
+    <div class="chat-popup" id="chat-popup" style="display: none;">
+        <div class="chat-header">
+          <h2>Car Leasing & Financing Assistance</h2>
+          <button class="close-btn" onclick="closeChat()">X</button>
+        </div>
+        <div class="chat-container" id="chat-container"></div>
+        <form id="chat-form" class="chat-form" onsubmit="handleSubmit(event)">
+          <input type="text" id="user-input" placeholder="Type your message here...">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+</main>
+<footer class="text-center mt-5">
+    <p>&copy; 2024 Credit Education for Car Buyers</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<script src="js/chatbot.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

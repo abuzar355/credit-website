@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- site metas -->
+        <title>Loan & Lease</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Responsive -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- fevicon -->
+        <link rel="icon" href="images/fevicon.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+        <!-- Tweaks for older IEs -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <!-- owl stylesheets -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+    <div class="header_main">
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/abc.webp" alt="Logo" class="logo-image"></a>                            
+            </div>
+            <h1 style=" margin-top: 50px; color: #072833 ; text-align: center; font-size: xxx-large;" ><b> Credit Education Hub</h1>
+        </div>
+    </div>
+<div class="header">
+    <div class="container">
+        <!-- Header inner -->
+        <div class="col-sm-12">
+            <div class="menu-area">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="credit-score-simulator.html">Credit Score Simulator</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loan-calculator.html">Loan Calculator</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT</a>
+                            </li>
+                            <li class="last"><a href="#"><img src="images/search-icon.png" alt="icon"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<main class="container mt-5">
+
+    <form id="loanCalculatorForm" style="margin-top: -25px">
+        <br><div class="custom-header">
+            Loan Calculator<br>
+        </div>
+           
+            <div class="form-group marg">
+                <label for="loanAmount"><br>Loan Amount ($)</label>
+                <input type="number" id="loanAmount" class="form-control" placeholder="Enter loan amount" required>
+            </div>
+            <div class="form-group">
+                <label for="loanTerm">Loan Term (Months)</label>
+                <input type="number" id="loanTerm" class="form-control" placeholder="Enter loan term in months" required>
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Interest Rate (Annual Percentage)</label>
+                <input type="number" id="interestRate" class="form-control" step="0.01" placeholder="Enter interest rate" required>
+            </div>
+            <div class="form-group">
+                <label for="extraPayment">Optional Extra Payment ($)</label>
+                <input type="number" id="extraPayment" class="form-control" placeholder="Enter optional extra payment">
+            </div>
+            <button type="button" id="calculateButton" class="btn btn-primary">Calculate</button>
+        </form>
+        <div class="results-grid mt-4">
+            <div class="result-item">
+                <label for="monthlyPaymentDisplay">Monthly Payment:</label>
+                <output id="monthlyPaymentDisplay" class="form-control"></output>
+            </div>
+            <div class="result-item">
+                <label for="totalPaymentDisplay">Total Payment with Extra:</label>
+                <output id="totalPaymentDisplay" class="form-control"></output>
+            </div>
+            <div class="result-item">
+                <label for="amountFinancedDisplay">Amount Financed:</label>
+                <output id="amountFinancedDisplay" class="form-control"></output>
+            </div>
+            <div class="result-item">
+                <label for="interestRateDisplay">Interest Rate:</label>
+                <output id="interestRateDisplay" class="form-control"></output>
+            </div>
+            <div class="result-item">
+                <label for="reducedTerm">Reduced Term (Months):</label>
+                <output id="reducedTerm" class="form-control"></output>
+            </div>
+            <div class="result-item">
+                <label for="totalInterestPaid">Total Interest Paid ($):</label>
+                <output id="totalInterestPaid" class="form-control"></output>
+            </div>
+        </div>
+        <section class="amortization-schedule mt-5">
+            <h2>Your Amortization Schedule</h2>
+            <table id="amortizationTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Payment No.</th>
+                        <th>Payment Amount</th>
+                        <th>Interest Paid</th>
+                        <th>Principal Paid</th>
+                        <th>Remaining Balance</th>
+                        <th>Extra Payment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Amortization schedule will be dynamically populated by JavaScript here -->
+                </tbody>
+            </table>
+        </section>
+
+        <button id="chatbot-toggle" class="chatbot-toggle-btn" onclick="toggleChat()">Chat with Expert</button>
+
+        <div class="chat-popup" id="chat-popup" style="display: none;">
+            <div class="chat-header">
+              <h2>Car Leasing & Financing Assistance</h2>
+              <button class="close-btn" onclick="closeChat()">X</button>
+            </div>
+            <div class="chat-container" id="chat-container"></div>
+            <form id="chat-form" class="chat-form" onsubmit="handleSubmit(event)">
+              <input type="text" id="user-input" placeholder="Type your message here...">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+    </main>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Car Loan Calculator</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/chatbot.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-popup">
+    <div class="chat-header">
+      <h2>Car Leasing & Financing Assistance</h2>
+      <button class="close-btn" onclick="closeChat()">X</button>
+    </div>
+    <div class="chat-container" id="chat-container"></div>
+    <form id="chat-form" class="chat-form" onsubmit="handleSubmit(event)">
+      <input type="text" id="user-input" placeholder="Type your message here...">
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html>
