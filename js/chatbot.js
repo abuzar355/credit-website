@@ -1,4 +1,3 @@
-
 const chatContainer = document.getElementById('chat-container');
 const chatForm = document.getElementById('chat-form');
 const userInput = document.getElementById('user-input');
