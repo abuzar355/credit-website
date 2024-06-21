@@ -41,3 +41,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Setup OpenAI API Key
+        run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" > .env
