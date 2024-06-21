@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: 'build' # Adjust this if your build output directory is different
+          path: '.' # Adjust this if your build output directory is different
 
       - name: Deploy to GitHub Pages
         id: deployment
