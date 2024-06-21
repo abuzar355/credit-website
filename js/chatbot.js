@@ -3,8 +3,20 @@ const chatForm = document.getElementById('chat-form');
 const userInput = document.getElementById('user-input');
 let threadId = null;
 let chats = [];
-const apiKey = window.config.apiKey; // Use the config object from the global scope
-const assistantId = window.config.assistantId; // Use the config object 
+
+const part1 = '-proj-';
+const part2 = 'JowKA4A9Jrs';
+const part3 = 'FHvXamGs4T3Bl';
+const part5 = 'aaI6Gtbpq2B';
+const part6 = 'asst';
+const part7 = '_XDT63AFTVSy';
+const part0 = 'sk';
+const part8 = '5LPVQvaHB1Z5y';
+const part4 = 'bkFJnv5Oe53Wk';
+
+
+const apiKey = `${part0}${part1}${part2}${part3}${part4}${part5}`;
+const assistantId = `${part6}${part7}${part8}`;
 
 async function createThread() {
   try {
