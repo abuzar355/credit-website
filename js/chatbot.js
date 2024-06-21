@@ -1,11 +1,12 @@
+import { config } from './config.js';
 
 const chatContainer = document.getElementById('chat-container');
 const chatForm = document.getElementById('chat-form');
 const userInput = document.getElementById('user-input');
 let threadId = null;
 let chats = [];
-const apiKey = process.env.OPENAI_API_KEY; // Use environment variable
-const assistantId = 'asst_XDT63AFTVSy5LPVQvaHB1Z5y'; // Your fine-tuned assistant ID
+const apiKey = config.apiKey; // Use the config object
+const assistantId = config.assistantId; // Use the config object
 
 async function createThread() {
   try {
