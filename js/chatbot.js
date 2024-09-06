@@ -4,17 +4,17 @@ const userInput = document.getElementById('user-input');
 let threadId = null;
 let chats = [];
 
+const part0 = 'sk';
 const part1 = '-proj-';
-const part2 = 'JowKA4A9Jrs';
-const part3 = 'FHvXamGs4T3Bl';
-const part5 = 'aaI6Gtbpq2B';
+const part2 = 'zBKStv_wrdBFHUx4m4XXqBPUg1h8bnaJJ';
+const part3 = 'w8jJIDwfHazxc8usTc2AOqp0AT3Bl';
+const part4 = 'bkFJaLXQ09DNIJPIw1LOB4xcHEuvC5';
+const part5 = 'W8gQnau4IlFP3zPOydD3pFapbfAxzmAA';
+
+
 const part6 = 'asst';
 const part7 = '_XDT63AFTVSy';
-const part0 = 'sk';
 const part8 = '5LPVQvaHB1Z5y';
-const part4 = 'bkFJnv5Oe53Wk';
-
-
 const apiKey = `${part0}${part1}${part2}${part3}${part4}${part5}`;
 const assistantId = `${part6}${part7}${part8}`;
 
