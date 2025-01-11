@@ -6,10 +6,10 @@ let chats = [];
 
 const part0 = 'sk';
 const part1 = '-proj-';
-const part2 = 'zBKStv_wrdBFHUx4m4XXqBPUg1h8bnaJJ';
-const part3 = 'w8jJIDwfHazxc8usTc2AOqp0AT3Bl';
-const part4 = 'bkFJaLXQ09DNIJPIw1LOB4xcHEuvC5';
-const part5 = 'W8gQnau4IlFP3zPOydD3pFapbfAxzmAA';
+const part2 = 'rmR62MiYFhESCiB8D-ola-acfRqOMH8CNR5jIn-';
+const part3 = 'gkL0sBbLutgMhDudYsny3E4pJQZj3BiVyv6T3BlbkFJsL36GppSBEslOrvLTBfuVagT';
+const part4 = '_0N8Mh47CvA_R-';
+const part5 = '9HH9QL3jTu84vdndOPbi3WSg4RjZkSWWpJkA';
 
 
 const part6 = 'asst';
